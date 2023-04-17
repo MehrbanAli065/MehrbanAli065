@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays_Method</title>
+</head>
+
+<body>
+    <h1>Welcome to Arrays different methods</h1>
+    <h2>Array Creation</h2>
+    <button onclick="document.getElementById('p').innerHTML=Date()">Try it</button>
+    <p id="p"></p>
+    <!-- <script>
+        /* var arr= new Array();*/
+        /* arr[0]="hassan";*/
+        /* arr[1]=20;*/
+        /* arr[3]="true";*/
+        /* arr[4]="ali";*/
+        /* document.write("<ul>");*/
+        /*     for (a=0;a<5; a++){
+        /*      document.write("<li>"+ arr[a]+" </li>");}*/
+
+        /* document.write("</ul>");*/
+
+        var arr= new Array(5);
+        for (a=0;a<5; a++){
+          arr[a]=prompt("Enter value for index : "+a);
+        }
+         document.write("<ul>");
+             for (a=0;a<5; a++){
+              document.write("<li>"+ arr[a]+" </li>");}
+         document.write("</ul>");
+    </script> -->
+    <h2>Array concatination method(used for concating two strings or arrays)</h2>
+    <!-- <script>
+
+        var a = [12, 34, 23, 56, 89, 24, 21, 6, 86, 23, 45, 7];
+        var b = ["Ali", "hassan", "kamran"];
+        var c = ["true", "false"]
+        var concat = a.concat(b, c);
+        document.write("[" + concat + "]" + " <br>");
+
+        //join method
+        var join = b.join("-");
+        document.write(join);
+    </script> -->
+
+    <h2>Array Slicing() Method</h2>
+    <!-- <script>
+    var arr = ["nayab", "mehrban", "hassan", "faizan"];
+    // var slice=arr.slice(1,3);
+    // var slice=arr.slice(1);
+    // var slice=arr.slice(-2);
+     var slice=arr.slice(-3,-1);
+    document.write(slice);
+    </script> -->
+
+    <h2>Array Splicing() Method</h2>
+    <!-- <script>
+    var arr = ["nayab", "mehrban", "hassan", "faizan" ];
+    document.writeln(arr+"<br>");  
+    arr.splice(2,0,"Mahi","Karan") // splice(at index 2, delet, add,add)
+    arr.splice(2,2,"Shabnam","Maryam") // 
+    document.writeln(arr);
+    </script> -->
+
+    <h2>Array some() & every() function</h2>
+    <!-- <script>
+        var age = [34,1,3,12,5,21,11,34,12];
+        function adult(value){
+            return value>=18;
+        }
+        var check=age.some(adult);  // if single value match in array it returns true
+        document.write(check+"<br>");
+
+        var check=age.every(adult);  // if all value match in array it returns true otherwise false
+        document.write(check);
+    </script> -->
+
+    <h2>Array find() function</h2>
+    <!-- <script>
+        var age = [19, 1, 3, 12, 5, 21, 11, 34, 12];
+        function adult(value) {
+            return value >= 18;
+        }
+        var check = age.find(adult);  // returns only 1st value which meet condition
+        document.write(check);
+        var checkIndex = age.findIndex(adult);  // returns only 1st value which meet condition
+        document.write(" Index is :"+checkIndex + "<br>");
+    </script> -->
+
+    <h2>Array toString() function</h2>
+    <!-- <script>
+        var ages = [12, 34, 23, 56, 89, 24, 21, 6, 86, 23, 45, 7];
+        ages.toString();
+        document.write(ages+"<br>"); //now we cant apply array methods on this bcz its a string now
+
+        //fill() function
+        var arr = ["nayab", "mehrban", "hassan", "faizan", "arslan", "saad"];
+        arr.fill("ALi")
+        document.write(arr);
+    </script> -->
+
+    <h2>Sort and reverse Method</h2>
+    <!-- <script>
+        var arr = ["nayab", "mehrban", "hassan", "faizan", "arslan", "saad"];
+        document.write("After Sorting array: " + arr.sort() + "<br>");
+        document.write("After Sorting array: " + arr.reverse() + "<br>");
+    </script> -->
+
+    <h2>Filter Method</h2>
+    <!-- <script>
+        var ages = [12, 34, 23, 56, 89, 24, 21, 6, 86, 23, 45, 7];
+        document.write(ages + "<br>");
+        function checkAdult(age) {
+            return age >= 18;
+        }
+        var filter_function = ages.filter(checkAdult);
+        document.write("<b>Age >=18 are: </b>" + filter_function);
+    </script> -->
+
+    <h2>Map Method</h2>
+    <!-- <script>
+        var ages = [12, 34, 23, 56, 89, 24, 21, 6, 86, 23, 45, 7];
+        document.write(ages + "<br>");
+        // var adult=ages.map((age)=>{
+        //     return age>=18;
+        // });
+        // document.write(adult + "<br>");
+
+        // var multiply=ages.map((x)=>x*2);
+        // document.write(multiply + "<br>");
+
+
+       var student = [
+            { Name: "Ali", Age: 15 },
+            { Name: "Hassan", Age: 20 },
+            { Name: "Iqra", Age: 30 },
+        ];
+        // var display=student.map((x)=>{x.Name+ " "+ x.Age});
+        // document.write(display + "<br>");
+        function test(x){
+            return x.Name+ " "+ x.Age +"<br>";
+        }
+        var map=student.map(test);
+        document.write(map + "<br>");
+        
+    </script> -->
+
+    <h2>Array includes Method</h2>
+    <!-- <script>
+        var arr = ["ali", "mehrban", "hassan", "faizan", "arslan", "faizan"];
+        document.write("<b>array values are: </b>" + arr + "<br>");
+        var search2 = arr.includes("Ali");
+        var search = arr.includes("hassan");
+        document.write(`Search 1:${search}: <br> Search2: ${search2}:`);
+
+    </script> -->
+
+    <h2>Array POP/PUSH Method</h2>
+    <!-- <script>
+        var arr = ["ali", "mehrban", "hassan", "faizan", "arslan"];
+        arr.push("Nayab");
+        document.write("After Push: " + arr + "<br>");
+        arr.pop("mehrban");
+        document.write("After Pop: " + arr);
+
+    </script> -->
+
+    <h2>Array shift/unshift Method</h2>
+    <!-- <script>
+        var arr = ["ali", "mehrban", "hassan", "faizan", "arslan"];
+        arr.shift();  //basically it deletes 1st index of array
+        document.write("After Shift: " + arr + "<br>");
+        arr.unshift("Jaan");  //basically it adds value in start index of array
+        document.write("After unShift: " + arr + "<br>");
+    </script> -->
+
+    <h2>Array of object Method</h2>
+    <!-- <script>
+        var student = [
+            { Name: "Ali", Age: 15 },
+            { Name: "Hassan", Age: 20 },
+            { Name: "Iqra", Age: 30 },
+        ];
+        //  document.write(student.Name+"<br>");// undefined
+        // console.log(student.Name);// undefined
+        console.log(student);
+        for (a = 0; a < student.length; a++) {
+            // console.log(student[a].Name+" "+[a].Age); // undefined
+            console.log(student[a].Name + " " + student[a].Age);
+        }
+    </script> -->
+
+    <h2>foreach() Loop</h2>
+    <!-- <script>
+        var arr = ["ali", "mehrban", "hassan", "faizan", "arslan"];
+        arr.forEach((value,index) => {
+            document.write(index+" : "+value+"<br>");
+        });
+    </script> -->
+
+    <h2>forin Loop(for printing object values)</h2>
+    <!-- <script>
+        var obj={
+            fName:"Hassan",
+            lName:"Ali",
+            Age:18,
+            country:"Pakistan"
+        }
+        for (var i in obj){
+            document.write(i+":"+obj[i]+"<br>");
+        }
+    </script> -->
+
+    <h2>isArray() Method</h2>
+    <!-- <script>
+        var arr = ["ali", "mehrban", "hassan", "faizan", "arslan"];
+        // var a=20;
+        // var b="ali";
+        // var is_Array1= Array.isArray(arr);
+        // var is_Array2= Array.isArray(a);
+        // var is_Array3= Array.isArray(b);
+        // document.writeln(is_Array1+"<br>");
+        // document.writeln(is_Array2+"<br>");
+        // document.writeln(is_Array3+"<br>");
+        if (Array.isArray(arr)==true) {
+            document.writeln("This is array: " + "<br>");
+           // alert("this is not array");
+        }
+        else {
+            promt("this is not array");
+            document.writeln("This not array: " + "<br>");
+        }
+    </script> -->
+
+    <h2>Multidimensional arrays</h2>
+    <!-- <script>
+        var arr=[
+            ["Ali",22,"B.com"],
+            ["Ali",23,"B.com"],
+            ["Ali khan",24,"Bsc.com"]
+        ]
+        //document.write(arr);
+        document.write("<table border='1px'>");
+            document.write("<tr>");
+        for (var a=0;a<3;a++){
+            document.write("<td>"+arr[a]+"<br>");
+        }
+        document.write(arr[2][0]);
+        document.write(arr[2][2]);
+        document.write("</tr>");
+        document.write("</table>");
+    </script> -->
+
+
+</body>
+
+</html>

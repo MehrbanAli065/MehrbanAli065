@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavasScript | Strings and strings method</title>
+</head>
+<body>
+    <div class="container" id="content">
+        
+        <h1 style="text-align:center ;">JavasScript | Strings and strings method</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, magnam?</p>
+     <button onclick="myfunction()"  style="color: brown; border:20pxsolid rgb(253, 253, 250);"> Clicl Me</button>
+  <button onclick="all_string_methods()">Get all functions </button>
+    </div>
+
+    <script>
+        var name="Mehrban ali";
+        var Reg_No=065;
+        var Dept="BCS";
+        console.log(`Name is ${name} Reg no is ${Reg_No} Department is ${Dept}`);
+        var length=name.length;
+        console.log(`Length of my name is ${length}`)
+        console.log(`Hello \n World`)
+
+       function myfunction(){
+        document.getElementById('content').innerHTML = "Paragrapgh has been changed";
+       } 
+
+       //
+       function all_string_methods(){
+        var str="position of strings";
+        console.log(`the lenth of str is: ${str.length}`);
+        console.log(`Locate first occurence of str : ${str.indexOf("i")}`);
+        console.log(`Locate 2nd occurence of str: ${str.lastIndexOf("i")}`);
+        console.log(`Replacing the string: ${str.replace('Strings','No')}`);
+        console.log(`ToUpperCase: ${str.toUpperCase()}`);
+        console.log(`ToLowerCase: ${str.toLowerCase()}`);
+        console.log(`Concating new string: ${str.concat(" Hello world")}`);
+        console.log(`Printing Character: ${str.charAt(3)}`);
+       }
+       
+       all_string_methods();
+    </script>
+</body>
+</html>
